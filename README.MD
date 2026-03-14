@@ -34,3 +34,13 @@ red: not ready green: ready
 6. git push -u origin branchName (master or main)
    - ssh - connection is auto 
    - https - password token (personal access token)
+
+## on Updates 
+3. git status : check which files are ready to be tracked 
+red: not ready green: ready 
+4. git add nameoffile 
+   git add .  - add everything 
+5. git commit -m "message tag" : created a snapshot of your project 
+6. git push -u origin branchName (master or main)
+   - ssh - connection is auto 
+   - https - password token (personal access token)

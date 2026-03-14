@@ -1,3 +1,7 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
 /* styling with id */
 #para1 {
     color: red;

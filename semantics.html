@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Room 301</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="grid_container">
+
+      <!-- ① Full-width top bar → navigation landmark -->
+      <nav id="divNav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- ② Left sidebar → complementary content -->
+      <aside id="divA">
+        <h2>Sidebar Left</h2>
+        <p>Related links or extra context goes here.</p>
+      </aside>
+
+      <!-- ③ Centre hero → primary / main content (only one <main> per page) -->
+      <main id="divHero">
+        <h1>Welcome to Room 301</h1>
+        <p>This is the hero / main content area.</p>
+      </main>
+
+      <!-- ④ Right sidebar → another complementary region -->
+      <aside id="divB">
+        <h2>Sidebar Right</h2>
+        <p>Ads, widgets, or secondary info here.</p>
+      </aside>
+
+      <!-- ⑤ Full-width form row → thematic section containing a form -->
+      <section id="divForm">
+        <h2>Get in Touch</h2>
+        <form action="/submit" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <!-- ⑥–⑨ Card row → each card is a self-contained article -->
+      <article id="divCard1">
+        <h3>Card 1</h3>
+        <p>Short description for card one.</p>
+      </article>
+
+      <article id="divCard2">
+        <h3>Card 2</h3>
+        <p>Short description for card two.</p>
+      </article>
+
+      <article id="divCard3">
+        <h3>Card 3</h3>
+        <p>Short description for card three.</p>
+      </article>
+
+      <article id="divCard4">
+        <h3>Card 4</h3>
+        <p>Short description for card four.</p>
+      </article>
+
+      <!-- ⑩ Full-width bottom bar → page footer landmark -->
+      <footer id="divFooter">
+        <p>&copy; 2025 Room 301. All rights reserved.</p>
+      </footer>
+
+    </div><!-- end #grid_container -->
+  </body>
+</html>
