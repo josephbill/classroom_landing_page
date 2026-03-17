@@ -20,8 +20,8 @@ in the grid : e.g. 10 spannables to work  */
     ;
 }
 
-/* ── NAV ──────────────────────────────────────────── */
-#divNav {
+
+#divNav{
   grid-area: a;           /* grid-area preserved */
   display: flex;
   align-items: center;
@@ -35,7 +35,6 @@ in the grid : e.g. 10 spannables to work  */
   z-index: 100;
 }
 
-/* Wordmark injected — no HTML change needed */
 #divNav::before {
   content: 'Room 301';
   font-family: 'Syne', sans-serif;
@@ -78,7 +77,7 @@ in the grid : e.g. 10 spannables to work  */
   color: #0d0f14;
 }
 
-/* ── MOBILE ───────────────────────────────────────── */
+
 @media screen and (max-width: 768px) {
   #divNav {
     flex-wrap: wrap;
@@ -92,6 +91,10 @@ in the grid : e.g. 10 spannables to work  */
     margin-bottom: 4px;
   }
 }
+
+
+
+
 
 
 #divA {
@@ -193,6 +196,7 @@ in the grid : e.g. 10 spannables to work  */
 }
 
 
+
 #divB {
   grid-area: d;
   padding: 24px 16px;
@@ -248,257 +252,58 @@ in the grid : e.g. 10 spannables to work  */
   color: #e8c87d;
 }
 
-
 #divForm{
     grid-area: e;
     padding: 2px;
     margin: 4px;
 }
-
-
-#divCard1 {
-  grid-area: f;
-  padding: 16px;
-  margin: 12px 8px;
-  background: #161920;
-  border: 1px solid #2b2f42;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  overflow: hidden;
-  transition: transform .22s, box-shadow .22s;
+#divCard1{
+    grid-area: f;
+    padding: 2px;
+    margin: 4px;
 }
-
-#divCard1:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(0,0,0,.5), 0 0 0 1px #6c8eff;
+#divCard2{
+    grid-area: g;
+    padding: 2px;
+    margin: 4px;
 }
-
-#divCard1 img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 8px;
-  background: #1e2230;
-  display: block;
+#divCard3{
+    grid-area: h;
+    padding: 2px;
+    margin: 4px;
 }
-
-#divCard1 blockquote {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  color: #7a7f96;
-  font-style: normal;
-  flex: 1;
+#divCard4{
+    grid-area: i;
+    padding: 2px;
+    margin: 4px;
 }
-
-#divCard1 button {
-  align-self: flex-start;
-  padding: 7px 16px;
-  background: transparent;
-  border: 1px solid #6c8eff;
-  border-radius: 6px;
-  color: #6c8eff;
-  font-family: 'Syne', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background .2s, color .2s;
-}
-
-#divCard1 button:hover {
-  background: #6c8eff;
-  color: #0d0f14;
-}
-
-
-
-#divCard2 {
-  grid-area: g;
-  padding: 16px;
-  margin: 12px 8px;
-  background: #161920;
-  border: 1px solid #2b2f42;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  overflow: hidden;
-  transition: transform .22s, box-shadow .22s;
-}
-
-#divCard2:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(0,0,0,.5), 0 0 0 1px #6c8eff;
-}
-
-#divCard2 img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 8px;
-  background: #1e2230;
-  display: block;
-}
-
-#divCard2 blockquote {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  color: #7a7f96;
-  font-style: normal;
-  flex: 1;
-}
-
-#divCard2 button {
-  align-self: flex-start;
-  padding: 7px 16px;
-  background: transparent;
-  border: 1px solid #6c8eff;
-  border-radius: 6px;
-  color: #6c8eff;
-  font-family: 'Syne', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background .2s, color .2s;
-}
-
-#divCard2 button:hover {
-  background: #6c8eff;
-  color: #0d0f14;
-}
-
-
-#divCard3 {
-  grid-area: h;
-  padding: 16px;
-  margin: 12px 8px;
-  background: #161920;
-  border: 1px solid #2b2f42;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  overflow: hidden;
-  transition: transform .22s, box-shadow .22s;
-}
-
-#divCard3:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(0,0,0,.5), 0 0 0 1px #6c8eff;
-}
-
-#divCard3 img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 8px;
-  background: #1e2230;
-  display: block;
-}
-
-#divCard3 blockquote {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  color: #7a7f96;
-  font-style: normal;
-  flex: 1;
-}
-
-#divCard3 button {
-  align-self: flex-start;
-  padding: 7px 16px;
-  background: transparent;
-  border: 1px solid #6c8eff;
-  border-radius: 6px;
-  color: #6c8eff;
-  font-family: 'Syne', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background .2s, color .2s;
-}
-
-#divCard3 button:hover {
-  background: #6c8eff;
-  color: #0d0f14;
-}
-
-#divCard4 {
-  grid-area: i;
-  padding: 16px;
-  margin: 12px 8px;
-  background: #161920;
-  border: 1px solid #2b2f42;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  overflow: hidden;
-  transition: transform .22s, box-shadow .22s;
-}
-
-#divCard4:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(0,0,0,.5), 0 0 0 1px #6c8eff;
-}
-
-#divCard4 img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 8px;
-  background: #1e2230;
-  display: block;
-}
-
-#divCard4 blockquote {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  color: #7a7f96;
-  font-style: normal;
-  flex: 1;
-}
-
-#divCard4 button {
-  align-self: flex-start;
-  padding: 7px 16px;
-  background: transparent;
-  border: 1px solid #6c8eff;
-  border-radius: 6px;
-  color: #6c8eff;
-  font-family: 'Syne', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background .2s, color .2s;
-}
-
-#divCard4 button:hover {
-  background: #6c8eff;
-  color: #0d0f14;
-}
-
-
 #divFooter{
     grid-area: j;
     padding: 2px;
     margin: 4px;
+    background-color: #0d0f14;
+    justify-content: center;
+    align-items: center;
+}
+
+#divFooter p{
+     color: white;
+     font-family: 'Syne', sans-serif;
+     text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display:block;
 }
 
 
+.video-container iframe{
+    width:100%;
+    aspect-ratio: 16/9;
+    border: 0;
+}
 
 
 @media screen and (max-width: 768px){
